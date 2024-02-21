@@ -349,15 +349,21 @@ h1, h2, h3 {
     justify-content: center;
     margin: 150px;
 }
+
 .socials-container a {
-    margin: 0 30px;
-    font-size: 45px;
-    color: white;
     text-decoration: none;
-}
-.socials-container a:hover {
+    border: 2px solid;
+    padding: 0px 20px 10px 20px;
     color: rgb(143, 39, 39);
-    transition: 200ms ease-in-out;
+    display: inline-block;
+    padding: 6px 30px;
+    margin-left: 6rem;
+    font-size: 3rem;
+}
+
+.socials-container a:hover {
+    box-shadow: 6px 6px 0px rgb(143, 39, 39);
+    transform: translate(-6px, -6px);
 }
 
 footer {
