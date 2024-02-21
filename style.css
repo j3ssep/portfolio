@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, h3 {
+    font-weight: normal;
+}
+
 .content-container {
     overflow: hidden;
 }
@@ -37,14 +41,12 @@ html {
     transform: translateX(-100px);
     animation: slideIn 1s ease-out forwards;
     margin-bottom: -30px;
-    font-weight: normal;
 }
 
 .hero-text h2 {
     transform: translateX(100px);
     animation: slideIn 1s ease-out forwards;
     margin-bottom: 30px;
-    font-weight: normal;
 }
 
 @keyframes slideIn {
@@ -60,24 +62,22 @@ html {
     text-decoration: none;
     border: 2px solid;
     padding: 0px 20px 10px 20px;
-    transform: translateY(70px);
-    animation: slideUp 1s  2s ease-out forwards;
+    animation: appearIn 1s  2s ease-out forwards;
     color: rgb(143, 39, 39);
-    letter-spacing: 2px;
     display: inline-block;
     opacity: 0;
+    transition: 0.3s;
+    padding: 6px 30px;
+}
+.hero-btn:hover {
+    box-shadow: 6px 6px 0px rgb(143, 39, 39);
+    transform: translate(-6px, -6px);
 }
 
-@keyframes slideUp {
+@keyframes appearIn {
     to {
-        transform: translateY(0);
         opacity: 1;
     }
-}
-
-.hero-btn i {
-    font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
  nav {
@@ -144,21 +144,21 @@ html {
 
 .circle3 {
     top: 32%;
-    right: -17%;
+    right: -45%;
     width: 500px;
     height: 400px;
 }
 
 .circle4 {
     top: 52%;
-    left: -17%;
+    left: -35%;
     width: 500px;
     height: 400px;
 }
 
 .circle5 {
     top: 72%;
-    right: -17%;
+    right: -40%;
     width: 500px;
     height: 400px;
     background: rgb(143, 39, 39);
@@ -166,7 +166,7 @@ html {
 
 .circle6 {
     top: 92%;
-    left: -17%;
+    left: -40%;
     width: 500px;
     height: 250px;
 }
@@ -258,13 +258,13 @@ html {
 .project1-image {
     border: 2px solid transparent;
     outline: none;
-    box-shadow: 0 0 15px rgba(0, 128, 255, 0.9);
+    box-shadow: 0 0 15px rgba(143, 39, 39, 0.9)
 }
 
 .project2-image {
     border: 2px solid transparent;
     outline: none;
-    box-shadow: 0 0 15px rgba(143, 39, 39, 0.9);
+    box-shadow: 0 0 15px rgba(143, 39, 39, 0.9)
 }
 
 .project-details {
@@ -279,14 +279,40 @@ html {
 }
 
 .project-details p {
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: -5px;
     width: 60%;
 }
 
+.tech-text b  {
+    color: rgb(143, 39, 39);
+    margin-left: 20px;
+    word-spacing: 20px;
+}
+
+.project-buttons i {
+    padding-right: 10px;
+}
+
 .project-buttons {
-    display: flex;
-    align-self: flex-start;
+    margin-top: 30px;
+}
+.project-buttons a {
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0px 20px 10px 20px;
+    color: rgb(143, 39, 39);
+    letter-spacing: 2px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.project-buttons a:hover {
+    box-shadow: 6px 6px 0px rgb(143, 39, 39);
+    transform: translate(-6px, -6px);
 }
 
 .site-button {
@@ -310,25 +336,25 @@ html {
     justify-content: center;
 }
 .contact-text-container h2 {
-    margin-top: 10vh;
+    margin-top: 20px;
     white-space: nowrap;
     font-size: 40px;
     color: rgb(143, 39, 39);
 }
 .contact-text-container p {
     margin: 20px 60px;
-    font-size: 24px;
+    font-size: 22px;
 }
-.connect-text, .job-text {
+.connect-text, .job-text, .visit-text {
     text-align: center;
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 33%;
 }
 .socials-container {
     display: flex;
     justify-content: center;
-    margin-top:  100px;
+    margin: 150px;
 }
 .socials-container a {
     margin: 0 30px;
