@@ -5,6 +5,7 @@ body {
     color: white;
     overflow-x: hidden;
     position: relative;
+    transition: 300ms;
 }
 
 html {
@@ -79,7 +80,6 @@ h1, h2, h3 {
  nav {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     height: 3rem;
     background-color: #070911b9;
     z-index: 10;
@@ -91,7 +91,9 @@ h1, h2, h3 {
 }
 
 .nav-container {
-    margin-right: 6rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav-container a {
@@ -102,9 +104,17 @@ h1, h2, h3 {
     font-size: 1.4rem;
 }
 
-.nav-container a:hover {
+.nav-container a:hover, .nav-container i:hover {
     color: rgb(143, 39, 39);
     transition: 150ms ease-out;
+}
+
+.nav-container i {
+    margin-left: 7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
 }
 
 .circle1, .circle2 {
@@ -398,4 +408,15 @@ footer p {
     border-radius: 4%;
     box-shadow: 0 0 20px rgba(143, 39, 39, 0.9)
     }
+}
+
+.darklight-button {
+    cursor: pointer;
+}
+
+.light-mode {
+    background-color: rgb(214, 214, 214);
+}
+.light-mode h1, .light-mode p, .light-mode h3, .light-mode .skillset, .light-mode .hero-text h2, .light-mode .project-details h2 {
+    color: black;
 }
