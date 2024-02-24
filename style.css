@@ -8,8 +8,16 @@ body {
     transition: 300ms;
 }
 
+::selection {
+    background-color: rgb(39, 39, 39);
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+a {
+    user-select: none;
 }
 
 h1, h2, h3 {
@@ -58,7 +66,6 @@ h1, h2, h3 {
 .hero-btn {
     text-decoration: none;
     border: 2px solid;
-    padding: 0px 20px 10px 20px;
     animation: appearIn 1s  2s ease-out forwards;
     color: rgb(143, 39, 39);
     display: inline-block;
@@ -194,8 +201,8 @@ h1, h2, h3 {
     margin-top: 10vh;
     display: flex;
     text-align: center;
-    padding: 70px 100px;
     width: 100%;
+    padding-top: 70px;
 }
 
 .about-container h1 {
@@ -207,11 +214,12 @@ h1, h2, h3 {
     font-size: 2rem;
     text-align: left;
     margin-top: -15px;
-    max-height: 30%;
 }
 
 .about-text-container {
     width: 40%;
+    text-align: left;
+    padding-left: 20vh;
 }
 
 .skills-header {
@@ -254,7 +262,6 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    margin-top: 5vh;
 }
 
 .project-image {
@@ -295,7 +302,6 @@ h1, h2, h3 {
 .project-buttons a {
     text-decoration: none;
     border: 2px solid;
-    padding: 0px 20px 10px 20px;
     color: rgb(143, 39, 39);
     letter-spacing: 2px;
     display: inline-flex;
@@ -356,7 +362,6 @@ h1, h2, h3 {
 .socials-container a {
     text-decoration: none;
     border: 2px solid;
-    padding: 0px 20px 10px 20px;
     color: rgb(143, 39, 39);
     display: inline-block;
     padding: 6px 30px;
@@ -417,6 +422,7 @@ footer p {
 .light-mode {
     background-color: rgb(214, 214, 214);
 }
+
 .light-mode h1, .light-mode p, .light-mode h3, .light-mode .skillset, .light-mode .hero-text h2, .light-mode .project-details h2 {
     color: black;
 }
