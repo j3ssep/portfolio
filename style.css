@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a, i {
     user-select: none;
 }
 
@@ -117,7 +117,7 @@ h1, h2, h3 {
 }
 
 .nav-container i {
-    margin-left: 7rem;
+    margin-left: 5rem;
     text-decoration: none;
     font-weight: 500;
     color: white;
@@ -356,7 +356,7 @@ h1, h2, h3 {
 .socials-container {
     display: flex;
     justify-content: center;
-    margin: 150px;
+    margin: 100px;
 }
 
 .socials-container a {
@@ -367,6 +367,7 @@ h1, h2, h3 {
     padding: 6px 30px;
     margin-left: 6rem;
     font-size: 2.5rem;
+    transition: 300ms;
 }
 
 .socials-container a:hover {
@@ -385,6 +386,18 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.1rem;
+}
+
+.darklight-button {
+    cursor: pointer;
+}
+
+.light-mode {
+    background-color: rgb(214, 214, 214);
+}
+
+.light-mode h1, .light-mode p, .light-mode h3, .light-mode .skillset, .light-mode .hero-text h2, .light-mode .project-details h2 {
+    color: black;
 }
 
 @media (max-width: 1300px) {
@@ -413,16 +426,4 @@ footer p {
     border-radius: 4%;
     box-shadow: 0 0 20px rgba(143, 39, 39, 0.9)
     }
-}
-
-.darklight-button {
-    cursor: pointer;
-}
-
-.light-mode {
-    background-color: rgb(214, 214, 214);
-}
-
-.light-mode h1, .light-mode p, .light-mode h3, .light-mode .skillset, .light-mode .hero-text h2, .light-mode .project-details h2 {
-    color: black;
 }
